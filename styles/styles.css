@@ -1,0 +1,906 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: #ffffff;
+}
+
+#home-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#home-page .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#home-page .container .home-content{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} 
+
+#home-page .home-content .home-heading, .about-company-details{
+    width: 40%;
+}
+
+#home-page .home-content .home-images{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+    height: 100%;
+    width: 60%;
+}
+
+#home-page .banner-image{
+    overflow: hidden;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#home-page img{
+    object-fit: cover;
+    height: 100%;
+}
+
+#home-page .home-content .home-heading{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    gap: 25px;
+    height: 80%;
+}
+
+#home-page h1{
+    font-size: 3rem;
+}
+
+#home-page .intro-para{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#home-page .intro-para hr{
+    background-color: #DECC50;
+    border: none;
+    height: 1px;
+}
+
+#home-page .intro-para p{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: end;
+}
+
+#home-page .view-more-button{
+    border: 1px solid #DECC50;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #DECC50;
+}
+
+#home-page .view-more-button:hover{
+    background-color: #000000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#home-page .view-more-button a, #about-company .read-more-button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#home-page .view-more-button:hover a, #about-company .read-more-button a:hover{
+    color: #DECC50;
+    transition: 0.5s;
+}
+
+header{
+    height: 100px;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+header .logo:hover{
+    cursor: pointer;
+}
+
+header .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+header .menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+header a:hover{
+    color: #ffffff;
+    background-color: #DECC50;
+}
+
+header .cart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .cart img{
+    width: 30px;
+    height: 30px;
+    filter:contrast(100%);
+}
+
+header .cart p{
+    font-size: 0.8rem;
+    padding-top: 5px;
+}
+
+header .cart p span{
+    color: #DECC50;
+}
+
+footer{
+    color: #ffffff;
+    padding: 100px;
+    background-color: #222222;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-info{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+footer img{
+    width: 30%;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .footer-info .info-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer .content{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+footer .social-icons{
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-icons a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+footer h6{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+#what-we-do, #get-chance, #what-we-made-before, #about-company, #our-preference, #our-3d-excursion, #designing-team, #know-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#get-chance, #testimonials, #design-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.what-we-do, .what-we-made-before, .about-company, .testimonials, .our-preference, .our-3d-excursion, .designing-team, .design-items, .know-more{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    gap: 50px;
+}
+
+.what-we-made-before, .our-preference{
+    gap:40px;
+}
+
+.get-chance{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 70px auto;
+}
+
+.common-heading{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.common-heading h2{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.common-heading hr{
+    width: 10%;
+    background-color: #DECC50;
+    border: none;
+    height: 1px;
+}
+
+.common-heading p{
+    text-align: center;
+}
+
+.what-we-do-content, .what-we-made-before-content, .designing-team .team-members, .know-more-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: auto;
+    width: 100%;
+}
+
+.team-members{
+    margin-top: 0 !important;
+}
+
+.what-we-do-content .single-card, .what-we-made-before-content .single-card, .designing-team .single-member, .know-more .single-know-more{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 27%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.what-we-made-before-content .single-card, .know-more .single-know-more{
+    margin: 5px;
+}
+
+.what-we-do-content .card-logo{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DECC50;
+}
+
+.designing-team .card-logo, .know-more .card-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-member .card-content, .know-more .card-content{
+    align-items: center;
+}
+
+.single-member .card-logo:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #DECC50;
+}
+
+.designing-team a{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.designing-team a:hover{
+    color: #DECC50;
+    cursor: pointer;
+}
+
+.what-we-do-content .single-card:hover, .what-we-made-before-content .single-card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px #DECC50;
+
+}
+
+.what-we-do-content .card-content, .what-we-made-before-content .card-content, .designing-team .card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.what-we-do-content a, .what-we-made-before-content a{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.what-we-do-content ul, .what-we-made-before-content ul, .know-more ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.know-more ul{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.know-more .list{
+    width: 100%;
+}
+
+.what-we-do-content ul li, .what-we-made-before-content ul li, .know-more ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.bullet-hr{
+    width: 5%;
+    background-color: #DECC50;
+    border: none;
+    height: 1px;
+    margin: auto 0;
+}
+
+.get-chance-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.get-chance-content .common-heading{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.get-chance-content .common-department{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.get-chance-content .common-heading h2{
+    font-size: 2rem;
+}
+
+.get-chance-content p, .design-items p{
+    text-align: center;
+}
+
+.get-chance-content h5{
+    font-size: 1.2rem;
+}
+
+.what-we-made-before ul[class="menu-ul"]{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.what-we-made-before li{
+    padding: 5px 10px;
+}
+
+.what-we-made-before li:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #DECC50;
+}
+
+.what-we-made-before-content .card-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-made-before-content img, .what-we-made-before-content .card-img, .designing-team .card-img, .designing-team img{
+    height: 85%;
+    width: 85%;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.know-more .card-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.designing-team .card-img, .designing-team img{
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.read-more-button{
+    text-align: center;
+    width: 16%;
+    border: 1px solid #DECC50;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #DECC50;
+}
+
+.read-more-button:hover{
+    background-color: #000000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.about-company-content{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about-company-content .about-company-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.about-company-content .about-company-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-1{
+    width: 20%;
+    margin: 30px auto;
+}
+
+.img-2{
+    width: 70%;
+}
+
+.about-company-details{
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.about-company-details h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about-company-details h6{
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+
+.about-company .article{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-div{
+    width: 100%;
+}
+
+.testimonial-review, .testimonial-carousol{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    text-align: center;
+}
+
+.testimonial-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 60%;
+}
+
+.testimonial-review .user-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testimonial-review h6{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.know-more h6, .design-items h6{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.testimonial-review span{
+    font-size: 0.8rem;
+}
+
+.testimonial-review .user-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonial-carousol .carousol-img{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.preference-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.preference-content .preference-details, .preference-content .preference-img{
+    width: 50%;
+    display: flex;
+}
+
+.preference-content .preference-details{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.detail-heading .heading{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.detail-heading .date{
+    font-weight: bold;
+    color: #DECC50;
+}
+
+.detail-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.item-1{
+    width: 20%;
+    font-weight: bold;
+}
+
+.item-2{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.preference-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto 0;
+}
+
+.preference-img span{
+    font-weight: bold;
+    font-size: 20rem;
+    color: #DECC50;
+}
+
+.image, .image img{
+    height: 100%;
+    width: 100%;
+}
+
+.our-3d-excursion img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.our-3d-excursion-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.our-3d-excursion-content .video{
+    width: 55%;
+}
+
+.our-3d-excursion-content .list{
+    width: 30%;
+}
+
+.play-button i{
+    border: 2px solid #DECC50;
+    padding: 15px 30px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #DECC50;
+}
+
+.play-button i:hover{
+    background-color: #ffffff;
+    color: #DECC50;
+    transition: 0.5s;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.our-3d-excursion .play-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.our-3d-excursion .list-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.our-3d-excursion .single-item{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.our-3d-excursion .item-img{
+    width: 50%;
+}
+
+.our-3d-excursion .item-desc{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.our-3d-excursion .desc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.our-3d-excursion .desc h6{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.desc-point{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.single-know-more .card-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.know-more .know-more-content p, .know-more span, .design-items p{
+    font-size: 0.8rem;
+}
+
+.know-more-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+    gap: 10px;
+    width: 100%;
+}
+
+.know-more-image{
+    max-width: 16%;
+    display: flex;
+    justify-content: center;
+}
+
+.know-more-image img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.design-items .common-heading{
+    color: #ffffff;
+}
+
+.design-items hr{
+    background-color: #ffffff;
+}
+
+#design-items{
+    background-image: url(../public/design-items-bg.jpg);
+}
+
+#testimonials{
+    background-image: url(../public/testimonials-bg.jpg);
+} 
+
+#get-chance{
+    background-image: url(../public/get-chance-bg.jpg);
+}
+
+.get-chance, .testimonials, .design-items{
+    margin: 100px auto;
+}
+
+#design-items, #testimonials, #get-chance{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center center;
+}
+
+.design-items .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.design-items .single-item .single-item-container{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 5px;
+}
+
+.read-more{
+    display: flex;
+}
+
+.read-more a{
+    background-color: #DECC50;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.read-more a:hover{
+    background-color: #000000;
+    color: #DECC50;
+    transition: 0.5s;
+}
+
+.design-items .item-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.design-items .items span{
+    font-size: 1.5rem;
+}
