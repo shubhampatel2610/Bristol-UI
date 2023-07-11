@@ -34,19 +34,18 @@ body{
 }
 
 #home-page .home-content .home-images{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: center;
-    flex-direction: row;
-    gap: 15px;
+    column-gap: 20px;
     height: 100%;
-    width: 60%;
+    width: 55%;
+    margin: 0 auto;
 }
 
 #home-page .banner-image{
     overflow: hidden;
-    width: 15%;
-    display: flex;
-    justify-content: center;
+    width: auto;
 }
 
 #home-page img{
@@ -210,7 +209,6 @@ footer .footer-info .info-sec{
 footer .content{
     display: flex;
     justify-content: center;
-    
 }
 
 footer .content{
@@ -231,6 +229,10 @@ footer .social-icons a{
     background-color: #000000;
     border-radius: 50%;
     padding: 10px;
+}
+
+footer a:hover{
+    color: #DECC50;
 }
 
 footer h6{
@@ -301,7 +303,18 @@ footer h6{
     text-align: center;
 }
 
-.what-we-do-content, .what-we-made-before-content, .designing-team .team-members, .know-more-content{
+.what-we-do-content, .designing-team .team-members, .know-more-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 0 auto;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.what-we-made-before-content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -312,18 +325,27 @@ footer h6{
     width: 100%;
 }
 
-.team-members{
-    margin-top: 0 !important;
-}
-
-.what-we-do-content .single-card, .what-we-made-before-content .single-card, .designing-team .single-member, .know-more .single-know-more{
+.what-we-made-before-content .single-card{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     max-width: 27%;
     border-radius: 10px;
     margin: 10px;
+    padding: 10px;
+}
+
+.team-members{
+    margin-top: 0 !important;
+}
+
+.what-we-do-content .single-card, .designing-team .single-member, .know-more .single-know-more{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+    border-radius: 10px;
     padding: 20px;
 }
 
@@ -477,35 +499,34 @@ footer h6{
     align-items: center;
 }
 
-.what-we-made-before-content img, .what-we-made-before-content .card-img, .designing-team .card-img, .designing-team img{
-    height: 85%;
-    width: 85%;
+.what-we-made-before-content img, .what-we-made-before-content .card-logo, .designing-team .card-img, .designing-team img{
+    height: 90%;
+    width: 90%;
     object-fit: cover;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
 }
 
-.know-more .card-img img{
+.know-more .card-img img, .what-we-made-before-content img{
     height: 100%;
     width: 100%;
 }
 
-.designing-team .card-img, .designing-team img{
+.designing-team img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
 }
 
-.read-more-button{
+.read-more-button a{
     text-align: center;
-    width: 16%;
     border: 1px solid #DECC50;
     border-radius: 5px;
     padding: 15px;
     background-color: #DECC50;
 }
 
-.read-more-button:hover{
+.read-more-button a:hover{
     background-color: #000000;
     transition: 0.5s;
     cursor: pointer;
@@ -638,6 +659,13 @@ footer h6{
     display: flex;
 }
 
+.preference-content .preference-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 .preference-content .preference-details{
     flex-direction: column;
     justify-content: center;
@@ -680,6 +708,10 @@ footer h6{
     gap: 10px;
 }
 
+.item-2 p{
+    margin: auto 0;
+}
+
 .preference-img{
     display: flex;
     justify-content: center;
@@ -688,8 +720,9 @@ footer h6{
 }
 
 .preference-img span{
+    left: 0;
     font-weight: bold;
-    font-size: 20rem;
+    font-size: 18rem;
     color: #DECC50;
 }
 
@@ -708,7 +741,7 @@ footer h6{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 25px;
     width: 100%;
 }
 
@@ -717,7 +750,7 @@ footer h6{
 }
 
 .our-3d-excursion-content .list{
-    width: 30%;
+    width: 45%;
 }
 
 .play-button i{
@@ -751,6 +784,7 @@ footer h6{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
 }
 
 .our-3d-excursion .single-item{
@@ -802,18 +836,17 @@ footer h6{
 }
 
 .know-more-images{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
     margin-bottom: 40px;
     gap: 10px;
-    width: 100%;
+    width: auto;
+    padding: 10px;
 }
 
 .know-more-image{
-    max-width: 16%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -848,6 +881,10 @@ footer h6{
     margin: 100px auto;
 }
 
+.design-items{
+    width: 100% !important;
+}
+
 #design-items, #testimonials, #get-chance{
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -856,11 +893,12 @@ footer h6{
 }
 
 .design-items .items{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 20px;
 }
 
 .design-items .single-item .single-item-container{
@@ -903,4 +941,281 @@ footer h6{
 
 .design-items .items span{
     font-size: 1.5rem;
+}
+
+@media(max-width:1024px){
+    .home-content, .what-we-do, .what-we-made-before, .about-company, .testimonials, .our-preference, .our-3d-excursion, .designing-team, .design-items, .know-more, .get-chance{
+        width: 95%;
+    }
+
+    .home-images{
+        width: 50%;
+    }
+
+    p, li{
+        font-size: 0.8rem;
+    }
+
+    .what-we-do a, .get-chance h5, .what-we-made-before a, .about-company h6, .our-preference h4, .know-more h6, .footer-info h6{
+        font-size: 1rem;
+    }
+
+    .get-chance h2{
+        font-size: 1.5rem !important;
+    }
+
+    .get-chance-img, .get-chance-content{
+        width: 50%;
+        margin: 10px;
+    }
+
+    .get-chance-img img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .get-chance .common-heading, .get-chance .common-department{
+        width: 80%;
+    } 
+
+    .about-company h4{
+        font-size: 1.5rem !important;
+    }
+
+    .read-more-button a{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .detail-row{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .item-1{
+        width: 30%;
+        font-size: 0.9rem;
+    }
+    
+    .item-2{
+        width: 70%;
+        font-size: 0.8rem;
+        gap: 10px;
+    }
+
+    .common-heading{
+        width: 100%;
+    }
+
+    .common-heading p{
+        width: 60%;
+    }
+
+    .our-3d-excursion-content .video{
+        width: 55%;
+    }
+
+    .our-3d-excursion-content .list{
+        width: 40%;
+    }
+    
+    .our-3d-excursion .single-item{
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .our-3d-excursion .desc{
+        gap:20px;
+    }
+    
+    .our-3d-excursion .desc h6{
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    .design-items .items{
+        grid-template-columns: auto auto auto;
+    }
+  
+    footer{
+        padding: 70px;
+    }
+    
+    footer .footer-info{
+        gap: 30px;
+    }
+
+    footer .social-icons{
+        gap: 5px;
+    }
+
+    footer .social-icons a{
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+}
+
+@media(max-width:768px){
+
+    .what-we-do, .what-we-made-before, .about-company, .testimonials, .our-preference, .our-3d-excursion, .designing-team, .design-items, .know-more{
+        width: 100%;
+    }
+
+    #home-page{
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #home-page .container .home-content, #get-chance .get-chance, #our-preference .preference-content{
+        width: 90%;
+        flex-direction: column-reverse;
+    } 
+
+    #our-3d-excursion .our-3d-excursion-content, #know-more .know-more{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #about-company .about-company-content{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home-page .home-content .home-heading, #home-page .home-content .home-images, #about-company .about-company-img, #about-company .about-company-content #our-preference .preference-content .preference-details, #our-preference .preference-content .preference-img, #designing-team .team-members, #our-3d-excursion .video,#our-3d-excursion .list {
+        width: 100% !important;
+        align-items: center;
+    }
+
+    .img-1{
+        width: 15%;
+        margin: 10px auto;
+        height: 80%;
+    }
+    
+    .img-2{
+        width: 75%;
+    }
+
+    .single-know-more .card-content{
+        margin: 0 auto;
+    }
+
+    .get-chance .get-chance-content, .get-chance .get-chance-img, .know-more-content .card-img, .know-more-content .card-content{
+        width: 80%;
+        align-items: center;
+    }
+
+    #home-page .home-content .home-heading{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        height: 80%;
+        margin-top: 30px;
+    }
+    
+    #home-page .intro-para hr{
+        height: 0px;
+    }
+    
+    #home-page .intro-para p{
+        padding: auto 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    header .menu, header .cart, header .authorization{
+        width: 10%;
+        visibility: hidden;
+    }
+
+    .what-we-do-content, .design-items .items{
+        grid-template-columns: auto auto;
+        row-gap: 15px;
+    }
+
+    .what-we-made-before-content .single-card{
+        width: 100%;
+        max-width: 45%;
+    }
+
+    .about-company-details{
+        justify-content: center;
+        align-items: start;
+        padding: 0;
+        width: 70%;
+        margin-top: 20px;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .preference-details{
+        width: 100% !important;
+    }
+    
+    .about-company-details h4{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    
+    .about-company-details h6{
+        font-size: 0.9rem;
+        padding-bottom: 5px;
+    }
+    
+    .designing-team .team-members, .know-more-content{
+        grid-template-columns: auto;
+    }
+
+    footer .container .footer-info{
+        flex-direction: column;
+        gap: 40px;
+    }
+    footer img{
+        width: 30%;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    footer .footer-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    footer .info-sec{
+        align-items: center;
+        gap: 15px !important; 
+    }
+
+    footer img{
+        width: 20%;
+    }
+}
+
+@media(max-width:426px){
+    .what-we-do-content, .design-items .items{
+        grid-template-columns: auto;
+    }
+
+    html{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media(max-width:375px){
+    
+}
+
+@media(max-width:320px){
+    
 }
