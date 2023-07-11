@@ -1202,20 +1202,80 @@ footer h6{
 }
 
 @media(max-width:426px){
+    #home-page .home-images{
+        height: 15% !important;
+    }
+
+    body{
+        width: 110% !important;
+    }
+
     .what-we-do-content, .design-items .items{
         grid-template-columns: auto;
+        gap: 5px;
     }
 
-    html{
-        padding: 0;
-        margin: 0;
+    .common-heading p{
+        width: 85% !important;
     }
+
+    .what-we-do, .what-we-made-before, .about-company, .testimonials, .our-preference, .our-3d-excursion, .designing-team, .design-items, .know-more, .get-chance{
+        width: 100% !important;
+        margin: 30px 10px;
+    }
+
+    .know-more-images{
+        grid-template-columns: auto auto auto;
+    }
+
+    .what-we-made-before-content .single-card{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .what-we-do .single-card{
+        width: auto;
+    }
+
+    .what-we-made-before-content .single-card .card-logo, .what-we-made-before-content .single-card .card-img{
+        width: 100%;
+    }
+
+    .testimonial-content, #home-page .container .home-content, #get-chance .get-chance, #our-preference .preference-content, #our-3d-excursion .our-3d-excursion-content, #know-more .know-more, #about-company .about-company-content, #home-page .home-content .home-heading, #home-page .home-content .home-images, #about-company .about-company-img, #about-company .about-company-content #our-preference .preference-content .preference-details, #our-preference .preference-content .preference-img, #designing-team .team-members, #our-3d-excursion .video,#our-3d-excursion .list, .get-chance .get-chance-content, .get-chance .get-chance-img, .know-more-content .card-img, .know-more-content .card-content, #home-page .home-content .home-heading, .about-company-details, .what-we-do-content .single-card, .get-chance .common-department, .get-chance .common-heading{
+        width: 100% !important;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    #what-we-made-before .menu{
+        display: none !important;
+    }
+
+    .what-we-do-content, .what-we-do{
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    #what-we-do .single-card{
+        width: 100% !important;
+    }
+
 }
 
-@media(max-width:375px){
-    
-}
+@media(max-width:376px){
 
-@media(max-width:320px){
-    
+    .what-we-do-content, .what-we-do{
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    #what-we-made-before .menu{
+        display: none !important;
+    }
+
+    .home-heading{
+        gap: 50px !important;
+    }
 }
