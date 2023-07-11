@@ -1286,7 +1286,8 @@ footer h6{
         gap: 50px !important;
     }
 
-    #what-we-do .single-card{
+    #what-we-do .what-we-do-content .single-card{
+        object-fit: contain;
         width: 350px !important;
     }
 }
@@ -1297,7 +1298,8 @@ footer h6{
         font-size: 2.5rem !important;
     }
 
-    #what-we-do .single-card{
+    #what-we-do .what-we-do-content .single-card{
+        object-fit: contain;
         width: 300px !important;
     }
 }
