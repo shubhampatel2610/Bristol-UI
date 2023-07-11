@@ -1285,6 +1285,10 @@ footer h6{
     .home-heading{
         gap: 50px !important;
     }
+
+    #what-we-do .single-card{
+        width: 350px !important;
+    }
 }
 
 @media(max-width:320px){
