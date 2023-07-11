@@ -1245,7 +1245,7 @@ footer h6{
         text-align: center;
     }
 
-    #what-we-made-before .menu .menu-ul, #what-we-made-before .menu, #what-we-made-before li{
+    #what-we-made-before .menu .menu-ul, #what-we-made-before .menu, #what-we-made-before .menu .menu-ul li{
        width: 0% !important;
        gap: 0 !important;
        visibility: hidden;
