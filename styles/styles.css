@@ -1302,4 +1302,9 @@ footer h6{
         object-fit: contain;
         width: 100% !important;
     }
+
+    #design-items h6{
+        font-size: 0.9rem !important;
+        text-align: center;
+    }
 }
