@@ -1266,7 +1266,7 @@ footer h6{
     }
 
     #what-we-do .single-card{
-        width: 380px !important;
+        width: 360px !important;
     }
 
 }
@@ -1288,7 +1288,7 @@ footer h6{
 
     #what-we-do .what-we-do-content .single-card{
         object-fit: contain;
-        width: 100% !important;
+        width: 270px !important;
     }
 }
 
@@ -1300,7 +1300,7 @@ footer h6{
 
     #what-we-do .what-we-do-content .single-card{
         object-fit: contain;
-        width: 100% !important;
+        width: 250px !important;
     }
 
     #design-items h6{
